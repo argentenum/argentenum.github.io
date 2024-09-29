@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html><head>
 
 </head>
@@ -14,7 +13,7 @@
 			<div class="container">
 			<img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi" style="width:260px;float:right;float:top;">
 			<div class="blurb">
-	<h1>Christof's Github pages</h1>
+	<h1>arjun's Github pages</h1>
 	<p>These pages list some Github content: slides and project repositories by Arjun Ghosh.</p>
 </div><!-- /.blurb -->
 
