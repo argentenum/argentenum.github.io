@@ -17,37 +17,31 @@
 		<div class="reveal">
 			<div class="slides">
 				<section><h1>Cultural History of South Asia</h1>
-				<p>Distant view of historical linkages between South Asia and the world.</p>			
+				<p>Distant view of historical linkages <br> between South Asia and the world.</p>			
 				</section>
 
-				<section>
-					
-						<img src="https://argentenum.github.io/slideImages/from-canon-to-covid.jpg" alt="From Canon to Covid" style="height: 360px; margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
-										<p><small><a href="https://www.routledge.com/From-Canon-to-Covid-Transforming-English-Literary-Studies-in-India-Essays/Multani-Pal-Saha-Shakil-Ghosh/p/book/9781032508436#"target="_blank">Published in <br> Arjun Ghosh, Angelie Multani, Swati Pal, Nandini Saha and Albeena Shakil eds. <br> From Canon to Covid: Transforming Literary Studies in India. <br> Routledge India, 2023.</a></small>			
+				<section>			
+						<img src="https://images.tandf.co.uk/common/jackets/crclarge/978100332/9781003325239.jpg" alt="From Canon to Covid" style="height: 360px; margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
+										<p><small><a href="https://www.taylorfrancis.com/books/edit/10.4324/9781003325239/practices-digital-humanities-india-nirmala-menon-maya-dodd"target="_blank">To be published as <br> “Visualizing the cultural history of South Asia”<br> in Maya Dodd and Nirmala Menon eds. <br><i>Practices of Digital Humanities in India: Learning by doing<br> (Digital Humanities Asia Series).</i><br> Taylor and Francis.</a></small>			
 </p>
 				</section>
 
 				<section>
-				<h3>Publicly available Curriculum Data</h3>
-				<small><ul>
-					<li>UGC-NET (2004-2020)
-					<li> University of Delhi
-					<li> Calcutta University
-					<li> University of Hyderabad
-					<li> Aligarh Muslim University
-					<li> Banaras Hindu University
-					<li> Amrita Vishwa Vidyapeetham
-					<li> University of Mumbai
-					<li> Pondicherry University
-					<li> Jadavpur University
-					<li> Pune University
-					<li> Jamia Millia Islamia
-					<li> Panjab University, Chandigarh
-				</ul></small>
-				<small>Listed according to the QS World University Rankings 2021-22
-				</small>
-				</section>
+					<section>
+					<h3>Scope</h3>
+					</section>
 
+					<section>			
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/South_Asia_%28orthographic_projection%29						_without_national_boundaries.svg/800px-South_Asia_%28orthographic_projection%29										_without_national_boundaries.svg.png" alt="South Asia Map" style="height: 360px; margin: 0 auto 4rem auto; 						background: transparent;" class="w3-round">
+						<p><small>
+						<ul>
+							<li>Collect from Wikidata information about all persons who were either born or died in any 								territory that is currently part of South Asia
+							<li>Visualize them to study migration of <b>Persons of Importance</b>
+						</ul>
+						</small></p>
+					</section>
+
+				</section>
 
 				<section>
 				<h3>Research Workflow</h3>
@@ -64,7 +58,7 @@
 				<section>
 					<h3>Data acquisition</h3>
 				<small><ul>
-					<li>Most public universities make available a record of syllabi for various programmes offered by them.</small>
+					<li>Acquire necessary data from Wikidata using Wikidata query and R</small>
 					</ul>
 				</section>
 
@@ -72,8 +66,9 @@
 					<section>
 					<h3>Data cleaning</h3>
 				<small><ul>
-					<li>The syllabi files are mostly PDFs.
-					<li> They need to be converted to tidy structured data
+					<li>Check for integrity of the data
+					<li>Dates and Location of Birth and Death are essential for completing the dataset
+					<li>Occupation information can be optional 
 					</ul></small>
 					</section>	
 
@@ -87,16 +82,23 @@
 					</section>
 			
 
-					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD01.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
+					<section data-background-iframe="https://www.wikidata.org/wiki/Q1001" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px 							rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-						align: left;">
+						<h3>Linked Data</h3>
+						<p><b>Wikidata</b> follows the <br> Resource Description Framework (RDF)</b>
+						</p>
+					</div>
 					</section>
+					
 					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD02.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
+					<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1											*Gw1Vbr8kAWygoFU8BphN0g.png" alt="South Asia Map" style="height: 360px; margin: 0 auto 4rem auto; 							background: transparent;" class="w3-round">					
+						<h3>Knowledge Graph</h3>
+						<small><ul>
+							<li>RDF is a framework for representing data on the internet in an interconnected manner.
+							<li>Represents the relationships between real world entities - persons, places, objects - as a network
+						</ul></small>
 					</section>
 
-					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD03.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
-					</section>
 
 				</section>
 
@@ -104,24 +106,11 @@
 					<section>
 					<h3>Data analysis</h3>
 					<small><ul>
-					<li>Corroborate the names of authors with Wikidata
-					<li>Analyse them according to Geographic Location and Time
+					<li>Map migration by tracing Birth Location to Death Location
+					<li>Analyse them according to Time
+					<li>Tool used: R
 					</ul></small>
 					</section>
-
-					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD04.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
-					</section>
-
-					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD05.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
-					</section>
-
-					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD06.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
-					</section>
-
-
 				</section>
 
 				<section>
@@ -135,14 +124,14 @@
 					<section>
 					<h3>Tools used</h3>
 					<small><ul>
-					<li>Spreadsheet: Libreoffice Calc
+					<li>R
 					<li>Palladio
 					</ul></small>
 					</section>
 
 
 					<section>
-					<img src="https://argentenum.github.io/slideImages/gjvGD06.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
+					<img src="https://argentenum.github.io/slideImages/SAMappingFigures01.png" alt="From Canon to Covid" style="height: 600px; 					margin: 0 auto 4rem auto; background: transparent;" class="w3-round">
 					</section>
 
 					<section>
