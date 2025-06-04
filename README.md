@@ -7,7 +7,7 @@
 	        		<li><a href="http://argentenum.github.io/">Home</a></li>
 		        	<li><a href="http://argentenum.github.io/Slides.html">Slides</a></li>
 	        		<li><a href="http://argentenum.github.io/repos">Repositories</a></li>
-	        		<li><a href="http://argentenum.github.io/links">Links</a></li>
+	        		<li><a href="http://argentenum.github.io/links.html">Links</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
