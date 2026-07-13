@@ -19,11 +19,20 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     }
 
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
-      margin-right: 18px;
     }
 
     nav a:hover {
@@ -92,6 +101,16 @@
       margin-top: 40px;
     }
 
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     footer a {
       color: white;
       text-decoration: none;
@@ -103,21 +122,25 @@
     }
 
     @media (max-width: 700px) {
-      nav {
-        text-align: center;
+      nav ul,
+      footer ul {
+        justify-content: center;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 6px 10px;
+      nav {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="https://argentenum.github.io//remarkHome.html">Home</a>
-    <a href="https://argentenum.github.io/revealSlides/dh.html">DH Slides</a>
+    <ul>
+      <li><a href="http://argentenum.github.io/">Home</a></li>
+      <li><a href="http://argentenum.github.io/Slides.html">Slides</a></li>
+      <li><a href="http://argentenum.github.io/repos">Repositories</a></li>
+      <li><a href="http://argentenum.github.io/links.html">Links</a></li>
+    </ul>
   </nav>
 
   <div class="container">
@@ -138,7 +161,9 @@
   </div>
 
   <footer>
-    <a href="https://www.arjunghosh.in">arjunghosh.in</a>
+    <ul>
+      <li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
+    </ul>
   </footer>
 </body>
 </html>
