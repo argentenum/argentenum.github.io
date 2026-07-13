@@ -1,25 +1,244 @@
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun's GitHub Pages</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --nav: #0f172a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    nav, footer {
+      background: var(--nav);
+      color: white;
+    }
+
+    nav ul, footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+
+    nav .nav-wrap,
+    footer .footer-wrap,
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav .nav-wrap,
+    footer .footer-wrap {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav a,
+    footer a {
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding-top: 42px;
+      padding-bottom: 42px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 28px;
+      align-items: center;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .hero img {
+      width: 180px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      background: #eef2ff;
+      padding: 10px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .section-title {
+      margin: 32px 0 14px;
+      font-size: 1.2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      margin-top: 0;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--accent);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--accent-hover);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 24px;
+    }
+
+    footer .footer-wrap {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+      }
+
+      nav .nav-wrap,
+      footer .footer-wrap {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+
+      nav ul,
+      footer ul {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-			<nav>
-	    		<ul>
-	        		 <li><a href="http://argentenum.github.io/palladioWorkshop.html">Palladio</a></li>
-				<li><a href="http://argentenum.github.io/twineWorkshop.html">Twine</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			<img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi" style="width:260px;float:right;float:top;">
-			<div class="blurb">
-	<h1>arjun's Github pages</h1>
-	<p>These pages list some Github content: slides and project repositories by Arjun Ghosh.</p>
-</div><!-- /.blurb -->
+  <nav>
+    <div class="nav-wrap">
+      <div><strong>Arjun Ghosh</strong></div>
+      <ul>
+        <li><a href="http://argentenum.github.io/palladioWorkshop.html">Palladio</a></li>
+        <li><a href="http://argentenum.github.io/twineWorkshop.html">Twine</a></li>
+      </ul>
+    </div>
+  </nav>
 
-			
-			</div><!-- /.container -->
-			<br>
-			<footer>
-	    		<ul>
-	        		<li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
-				</ul>
-			</footer>
+  <div class="container">
+    <section class="hero">
+      <img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi">
+      <div>
+        <h1>Arjun's GitHub Pages</h1>
+        <p>Workshops, slides, and project repositories collected in one simple place.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Workshops</h2>
+    <div class="cards">
+      <div class="card">
+        <h2>Palladio</h2>
+        <p>Data visualization and mapping workshop materials.</p>
+        <a class="button" href="http://argentenum.github.io/palladioWorkshop.html">Open Palladio</a>
+      </div>
+
+      <div class="card">
+        <h2>Twine</h2>
+        <p>Interactive storytelling and digital humanities workshop materials.</p>
+        <a class="button" href="http://argentenum.github.io/twineWorkshop.html">Open Twine</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrap">
+      <ul>
+        <li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
