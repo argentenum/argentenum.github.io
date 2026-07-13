@@ -1,134 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Slides</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun's GitHub Pages</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
       background: #f6f8fb;
       color: #1f2937;
-      line-height: 1.6;
     }
 
     nav {
       background: #0f172a;
       padding: 14px 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    nav ul {
+    nav ul, footer ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
-      align-items: center;
     }
 
-    nav a {
-      color: white;
+    nav a, footer a {
+      color: #ffffff;
       text-decoration: none;
       font-weight: 600;
     }
 
-    nav a:hover {
+    nav a:hover, footer a:hover {
       text-decoration: underline;
     }
 
     .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 42px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     .hero {
+      display: flex;
+      gap: 30px;
+      align-items: center;
       background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      padding: 28px;
-      margin-bottom: 24px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      flex-wrap: wrap;
     }
 
-    h1 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 2rem;
+    .hero img {
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #eef2ff;
+      padding: 10px;
     }
 
-    p.lead {
-      margin-top: 0;
-      color: #4b5563;
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      margin: 0;
       font-size: 1.05rem;
+      color: #4b5563;
     }
 
-    .link-list {
+    .cards {
       display: grid;
-      gap: 14px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
     }
 
-    .link-card {
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
       background: white;
+      padding: 20px;
       border-radius: 14px;
-      padding: 18px 20px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
     }
 
-    .link-card:hover {
-      transform: translateY(-2px);
+    .card-link:hover .card {
+      transform: translateY(-3px);
       box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
     }
 
-    .link-card a {
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
       color: #2563eb;
-      text-decoration: none;
-      word-break: break-word;
     }
 
-    .link-card a:hover {
-      text-decoration: underline;
+    .card p {
+      margin-bottom: 0;
+      color: #4b5563;
     }
 
     footer {
+      margin-top: 50px;
       background: #0f172a;
-      color: white;
       padding: 18px 24px;
-      margin-top: 40px;
-    }
-
-    footer ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
 
     @media (max-width: 700px) {
-      nav ul,
-      footer ul {
+      .hero {
+        text-align: center;
         justify-content: center;
       }
 
-      nav {
-        text-align: center;
+      nav ul, footer ul {
+        justify-content: center;
       }
     }
   </style>
@@ -145,19 +145,35 @@
 
   <div class="container">
     <section class="hero">
-      <h1>Slides</h1>
-      <p class="lead">A small collection of presentation pages and slide decks.</p>
+      <img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi">
+      <div>
+        <h1>Arjun's GitHub Pages</h1>
+        <p>These pages list some GitHub content: slides and project repositories by Arjun Ghosh.</p>
+      </div>
     </section>
 
-    <div class="link-list">
-      <div class="link-card">
-        <a href="https://argentenum.github.io//remarkHome.html">https://argentenum.github.io//remarkHome.html</a>
-      </div>
+    <section class="cards">
+      <a class="card-link" href="http://argentenum.github.io/Slides.html">
+        <div class="card">
+          <h2>Slides</h2>
+          <p>Browse presentations, workshop material, and class notes.</p>
+        </div>
+      </a>
 
-      <div class="link-card">
-        <a href="https://argentenum.github.io/revealSlides/dh.html">https://argentenum.github.io/revealSlides/dh.html</a>
-      </div>
-    </div>
+      <a class="card-link" href="http://argentenum.github.io/repos">
+        <div class="card">
+          <h2>Repositories</h2>
+          <p>Explore projects, code samples, and digital humanities work.</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="http://argentenum.github.io/links.html">
+        <div class="card">
+          <h2>Links</h2>
+          <p>Find useful resources and related pages in one place.</p>
+        </div>
+      </a>
+    </section>
   </div>
 
   <footer>
