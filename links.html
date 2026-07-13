@@ -27,14 +27,16 @@
       line-height: 1.6;
     }
 
-    a { color: inherit; }
-
-    nav, footer {
+    nav {
       background: var(--nav);
-      color: white;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
     }
 
-    nav ul, footer ul {
+    nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -44,43 +46,20 @@
       align-items: center;
     }
 
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    }
-
-    nav .nav-wrap,
-    footer .footer-wrap,
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    nav .nav-wrap,
-    footer .footer-wrap {
-      min-height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    nav a,
-    footer a {
+    nav a {
+      color: #ffffff;
       text-decoration: none;
       font-weight: 600;
     }
 
-    nav a:hover,
-    footer a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
     .container {
-      padding-top: 42px;
-      padding-bottom: 42px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 42px 20px;
     }
 
     .hero {
@@ -168,11 +147,31 @@
 
     footer {
       margin-top: 24px;
+      background: var(--nav);
+      color: white;
+      padding: 18px 24px;
     }
 
-    footer .footer-wrap {
-      padding-top: 18px;
-      padding-bottom: 18px;
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 700px) {
@@ -180,14 +179,6 @@
         grid-template-columns: 1fr;
         text-align: center;
         justify-items: center;
-      }
-
-      nav .nav-wrap,
-      footer .footer-wrap {
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 14px;
-        padding-bottom: 14px;
       }
 
       nav ul,
@@ -199,13 +190,12 @@
 </head>
 <body>
   <nav>
-    <div class="nav-wrap">
-      <div><strong>Arjun Ghosh</strong></div>
-      <ul>
-        <li><a href="http://argentenum.github.io/palladioWorkshop.html">Palladio</a></li>
-        <li><a href="http://argentenum.github.io/twineWorkshop.html">Twine</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="http://argentenum.github.io/">Home</a></li>
+      <li><a href="http://argentenum.github.io/Slides.html">Slides</a></li>
+      <li><a href="http://argentenum.github.io/repos">Repositories</a></li>
+      <li><a href="http://argentenum.github.io/links.html">Links</a></li>
+    </ul>
   </nav>
 
   <div class="container">
@@ -234,11 +224,9 @@
   </div>
 
   <footer>
-    <div class="footer-wrap">
-      <ul>
-        <li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
+    </ul>
   </footer>
 </body>
 </html>
