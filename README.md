@@ -1,27 +1,158 @@
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun's GitHub Pages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f6f8fb;
+      color: #1f2937;
+    }
 
+    nav {
+      background: #0f172a;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul, footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a, footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover, footer a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #eef2ff;
+      padding: 10px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #4b5563;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #0f172a;
+      padding: 18px 24px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        text-align: center;
+        justify-content: center;
+      }
+
+      nav ul, footer ul {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-			<nav>
-	    		<ul>
-	        		<li><a href="http://argentenum.github.io/">Home</a></li>
-		        	<li><a href="http://argentenum.github.io/Slides.html">Slides</a></li>
-	        		<li><a href="http://argentenum.github.io/repos">Repositories</a></li>
-	        		<li><a href="http://argentenum.github.io/links.html">Links</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			<img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi" style="width:260px;float:right;float:top;">
-			<div class="blurb">
-	<h1>arjun's Github pages</h1>
-	<p>These pages list some Github content: slides and project repositories by Arjun Ghosh.</p>
-</div><!-- /.blurb -->
+  <nav>
+    <ul>
+      <li><a href="http://argentenum.github.io/">Home</a></li>
+      <li><a href="http://argentenum.github.io/Slides.html">Slides</a></li>
+      <li><a href="http://argentenum.github.io/repos">Repositories</a></li>
+      <li><a href="http://argentenum.github.io/links.html">Links</a></li>
+    </ul>
+  </nav>
 
-			
-			</div><!-- /.container -->
-			<br>
-			<footer>
-	    		<ul>
-	        		<li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
-				</ul>
-			</footer>
+  <div class="container">
+    <section class="hero">
+      <img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi">
+      <div>
+        <h1>Arjun's GitHub Pages</h1>
+        <p>These pages list some GitHub content: slides and project repositories by Arjun Ghosh.</p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Slides</h2>
+        <p>Browse presentations, workshop material, and class notes.</p>
+      </div>
+      <div class="card">
+        <h2>Repositories</h2>
+        <p>Explore projects, code samples, and digital humanities work.</p>
+      </div>
+      <div class="card">
+        <h2>Links</h2>
+        <p>Find useful resources and related pages in one place.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="https://www.arjunghosh.in">arjunghosh.in</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
