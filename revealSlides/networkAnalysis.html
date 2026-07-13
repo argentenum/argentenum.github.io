@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Humanities Data Basics</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css" id="theme">
+  <style>
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+    .reveal .small { font-size: 0.75em; }
+    .reveal .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .reveal .box {
+      border: 2px solid #ddd;
+      border-radius: 14px;
+      padding: 18px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h1>Digital Humanities Data Basics</h1>
+        <p>Networks, metadata, linked data, Wikidata, and the Semantic Web</p>
+      </section>
+
+      <section>
+        <h2>Network graphs</h2>
+        <p>A network graph represents relationships between things.</p>
+        <ul>
+          <li>Things are shown as <strong>nodes</strong>.</li>
+          <li>Relationships are shown as <strong>edges</strong>.</li>
+          <li>Useful for seeing patterns, clusters, and connections.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Nodes and edges</h2>
+        <div class="grid2">
+          <div class="box">
+            <h3>Node</h3>
+            <p>A node can be a person, place, object, book, or concept.</p>
+          </div>
+          <div class="box">
+            <h3>Edge</h3>
+            <p>An edge is the relationship between two nodes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sizing nodes and edges</h2>
+        <ul>
+          <li>Large nodes can show importance or number of connections.</li>
+          <li>Thicker edges can show stronger or more frequent relationships.</li>
+          <li>Visual size helps the viewer notice what matters most.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Colouring nodes and edges</h2>
+        <ul>
+          <li>Colour can group nodes by type, category, or cluster.</li>
+          <li>Edges can also be coloured by relationship type.</li>
+          <li>Good colour choices improve readability.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Classical metadata</h2>
+        <p>Metadata is data about data.</p>
+        <ul>
+          <li>Title</li>
+          <li>Creator</li>
+          <li>Date</li>
+          <li>Publisher</li>
+          <li>Location</li>
+          <li>Subject</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Dublin Core</h2>
+        <p>Dublin Core is a simple and widely used metadata standard.</p>
+        <ul>
+          <li>Title</li>
+          <li>Creator</li>
+          <li>Subject</li>
+          <li>Description</li>
+          <li>Date</li>
+          <li>Identifier</li>
+          <li>Source</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Linked data</h2>
+        <p>Linked data publishes structured data on the web using identifiers and links.</p>
+        <ul>
+          <li>Use URIs for things.</li>
+          <li>Use RDF to describe them.</li>
+          <li>Link to other datasets.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Triples</h2>
+        <p>Linked data is built from triples:</p>
+        <ul>
+          <li><strong>Subject</strong></li>
+          <li><strong>Predicate</strong></li>
+          <li><strong>Object</strong></li>
+        </ul>
+        <p class="small">Example: <em>Vermeer → creator of → The Milkmaid</em></p>
+      </section>
+
+      <section>
+        <h2>Linked open data</h2>
+        <p>Linked open data is linked data that is also open for reuse.</p>
+        <ul>
+          <li>Open licences</li>
+          <li>Shared identifiers</li>
+          <li>Connections across institutions</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wikidata</h2>
+        <p>Wikidata is a collaborative knowledge base of structured data.</p>
+        <ul>
+          <li>Items</li>
+          <li>Properties</li>
+          <li>Statements</li>
+          <li>References</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ontology</h2>
+        <p>An ontology describes concepts and relationships in a domain.</p>
+        <ul>
+          <li>Classes</li>
+          <li>Properties</li>
+          <li>Constraints</li>
+          <li>Meaning</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Knowledge graph</h2>
+        <p>A knowledge graph is a network of entities and relationships.</p>
+        <ul>
+          <li>Data</li>
+          <li>Meaning</li>
+          <li>Links</li>
+          <li>Structure</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Semantic Web</h2>
+        <p>The Semantic Web aims to make web data understandable by machines.</p>
+        <ul>
+          <li>RDF</li>
+          <li>OWL</li>
+          <li>SPARQL</li>
+          <li>Linked data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Takeaway</h2>
+        <ul>
+          <li>Networks visualize relationships.</li>
+          <li>Metadata describes resources.</li>
+          <li>Linked data connects facts on the web.</li>
+          <li>Wikidata is a large linked knowledge graph.</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true
+    });
+  </script>
+</body>
+</html>
