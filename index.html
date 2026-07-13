@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arjun's GitHub Pages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slides</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
       background: #f6f8fb;
       color: #1f2937;
+      line-height: 1.6;
     }
 
     nav {
       background: #0f172a;
       padding: 14px 24px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     }
 
-    nav ul, footer ul {
+    nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
-    nav a, footer a {
-      color: #ffffff;
+    nav a {
+      color: white;
       text-decoration: none;
       font-weight: 600;
     }
 
-    nav a:hover, footer a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 42px 20px;
     }
 
     .hero {
-      display: flex;
-      gap: 30px;
-      align-items: center;
       background: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-      flex-wrap: wrap;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 28px;
+      margin-bottom: 24px;
     }
 
-    .hero img {
-      width: 220px;
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      background: #eef2ff;
-      padding: 10px;
-    }
-
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
-
-    .hero p {
-      margin: 0;
-      font-size: 1.05rem;
-      color: #4b5563;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-    }
-
-    .card h2 {
+    h1 {
       margin-top: 0;
-      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    p.lead {
+      margin-top: 0;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .link-card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+    }
+
+    .link-card a {
+      color: #2563eb;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .link-card a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      margin-top: 50px;
       background: #0f172a;
+      color: white;
       padding: 18px 24px;
+      margin-top: 40px;
+    }
+
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 700px) {
-      .hero {
-        text-align: center;
+      nav ul,
+      footer ul {
         justify-content: center;
       }
 
-      nav ul, footer ul {
-        justify-content: center;
+      nav {
+        text-align: center;
       }
     }
   </style>
@@ -126,27 +145,19 @@
 
   <div class="container">
     <section class="hero">
-      <img src="https://w7.pngwing.com/pngs/253/323/png-transparent-indian-institute-of-technology-delhi-indian-institute-of-technology-madras-indian-institute-of-technology-bombay-sardar-vallabhbhai-national-institute-of-technology-surat-indian-institutes.png" alt="Logo of IIT Delhi">
-      <div>
-        <h1>Arjun's GitHub Pages</h1>
-        <p>These pages list some GitHub content: slides and project repositories by Arjun Ghosh.</p>
-      </div>
+      <h1>Slides</h1>
+      <p class="lead">A small collection of presentation pages and slide decks.</p>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <h2>Slides</h2>
-        <p>Browse presentations, workshop material, and class notes.</p>
+    <div class="link-list">
+      <div class="link-card">
+        <a href="https://argentenum.github.io//remarkHome.html">https://argentenum.github.io//remarkHome.html</a>
       </div>
-      <div class="card">
-        <h2>Repositories</h2>
-        <p>Explore projects, code samples, and digital humanities work.</p>
+
+      <div class="link-card">
+        <a href="https://argentenum.github.io/revealSlides/dh.html">https://argentenum.github.io/revealSlides/dh.html</a>
       </div>
-      <div class="card">
-        <h2>Links</h2>
-        <p>Find useful resources and related pages in one place.</p>
-      </div>
-    </section>
+    </div>
   </div>
 
   <footer>
