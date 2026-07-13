@@ -10,9 +10,16 @@
   <style>
     .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
     .reveal .small { font-size: 0.75em; }
+    .reveal .tiny { font-size: 0.65em; }
     .reveal .grid2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .reveal .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
       align-items: start;
     }
@@ -21,6 +28,43 @@
       border-radius: 14px;
       padding: 18px;
       background: #fafafa;
+    }
+    .reveal .arrow {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0.5rem 0;
+      color: #2563eb;
+    }
+    .reveal .diagram {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 16px;
+      background: #fff;
+    }
+    .reveal .node {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 2px solid #2563eb;
+      border-radius: 999px;
+      background: #eff6ff;
+      margin: 6px;
+      font-size: 0.9em;
+    }
+    .reveal .edge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 2px dashed #94a3b8;
+      border-radius: 10px;
+      background: #f8fafc;
+      margin: 6px;
+      font-size: 0.85em;
+    }
+    .reveal .label {
+      font-weight: 700;
+      color: #0f172a;
     }
   </style>
 </head>
@@ -36,6 +80,17 @@
       <section>
         <h2>Network graphs</h2>
         <p>A network graph represents relationships between things.</p>
+        <div class="diagram">
+          <div style="text-align:center;">
+            <span class="node">Museum</span>
+            <span class="node">Artist</span>
+            <span class="node">Painting</span>
+            <div class="arrow">↕</div>
+            <span class="edge">holds</span>
+            <span class="edge">created by</span>
+            <span class="edge">depicts</span>
+          </div>
+        </div>
         <ul>
           <li>Things are shown as <strong>nodes</strong>.</li>
           <li>Relationships are shown as <strong>edges</strong>.</li>
@@ -49,16 +104,36 @@
           <div class="box">
             <h3>Node</h3>
             <p>A node can be a person, place, object, book, or concept.</p>
+            <p class="small">Example: museum, author, city</p>
           </div>
           <div class="box">
             <h3>Edge</h3>
             <p>An edge is the relationship between two nodes.</p>
+            <p class="small">Example: creator of, located in, part of</p>
           </div>
+        </div>
+        <div class="diagram" style="margin-top:1rem; text-align:center;">
+          <span class="node">Node A</span>
+          <span class="edge">connected to</span>
+          <span class="node">Node B</span>
         </div>
       </section>
 
       <section>
         <h2>Sizing nodes and edges</h2>
+        <div class="diagram" style="text-align:center;">
+          <div>
+            <span class="node" style="font-size:0.8em; padding:8px 12px;">Small node</span>
+            <span class="node" style="font-size:1em; padding:10px 16px;">Medium node</span>
+            <span class="node" style="font-size:1.2em; padding:14px 20px;">Large node</span>
+          </div>
+          <div class="arrow">↕</div>
+          <div>
+            <span class="edge" style="border-width:1px;">Thin edge</span>
+            <span class="edge" style="border-width:2px;">Normal edge</span>
+            <span class="edge" style="border-width:4px;">Thick edge</span>
+          </div>
+        </div>
         <ul>
           <li>Large nodes can show importance or number of connections.</li>
           <li>Thicker edges can show stronger or more frequent relationships.</li>
@@ -68,6 +143,15 @@
 
       <section>
         <h2>Colouring nodes and edges</h2>
+        <div class="diagram" style="text-align:center;">
+          <span class="node" style="background:#dbeafe;border-color:#2563eb;">Place</span>
+          <span class="node" style="background:#dcfce7;border-color:#16a34a;">Person</span>
+          <span class="node" style="background:#fee2e2;border-color:#dc2626;">Object</span>
+          <div class="arrow">↕</div>
+          <span class="edge" style="background:#e0f2fe;border-color:#0284c7;">location</span>
+          <span class="edge" style="background:#ecfccb;border-color:#65a30d;">creator</span>
+          <span class="edge" style="background:#fef3c7;border-color:#d97706;">subject</span>
+        </div>
         <ul>
           <li>Colour can group nodes by type, category, or cluster.</li>
           <li>Edges can also be coloured by relationship type.</li>
@@ -78,33 +162,54 @@
       <section>
         <h2>Classical metadata</h2>
         <p>Metadata is data about data.</p>
-        <ul>
-          <li>Title</li>
-          <li>Creator</li>
-          <li>Date</li>
-          <li>Publisher</li>
-          <li>Location</li>
-          <li>Subject</li>
-        </ul>
+        <div class="grid2">
+          <div class="box">
+            <h3>Typical fields</h3>
+            <ul>
+              <li>Title</li>
+              <li>Creator</li>
+              <li>Date</li>
+              <li>Publisher</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Why it matters</h3>
+            <ul>
+              <li>Find resources</li>
+              <li>Describe resources</li>
+              <li>Manage resources</li>
+              <li>Cite resources</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section>
         <h2>Dublin Core</h2>
         <p>Dublin Core is a simple and widely used metadata standard.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Title</span>
+          <span class="node">Creator</span>
+          <span class="node">Subject</span>
+          <span class="node">Date</span>
+          <span class="node">Identifier</span>
+        </div>
         <ul>
-          <li>Title</li>
-          <li>Creator</li>
-          <li>Subject</li>
-          <li>Description</li>
-          <li>Date</li>
-          <li>Identifier</li>
-          <li>Source</li>
+          <li>It gives a common vocabulary for describing resources.</li>
+          <li>It is simple, flexible, and widely adopted.</li>
         </ul>
       </section>
 
       <section>
         <h2>Linked data</h2>
         <p>Linked data publishes structured data on the web using identifiers and links.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">URI</span>
+          <span class="arrow">→</span>
+          <span class="node">RDF</span>
+          <span class="arrow">→</span>
+          <span class="node">Linked data</span>
+        </div>
         <ul>
           <li>Use URIs for things.</li>
           <li>Use RDF to describe them.</li>
@@ -115,38 +220,65 @@
       <section>
         <h2>Triples</h2>
         <p>Linked data is built from triples:</p>
-        <ul>
-          <li><strong>Subject</strong></li>
-          <li><strong>Predicate</strong></li>
-          <li><strong>Object</strong></li>
-        </ul>
-        <p class="small">Example: <em>Vermeer → creator of → The Milkmaid</em></p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Subject</span>
+          <span class="arrow">→</span>
+          <span class="node">Predicate</span>
+          <span class="arrow">→</span>
+          <span class="node">Object</span>
+        </div>
+        <p class="small">Example: Vermeer → creator of → The Milkmaid</p>
+        <p>\[
+          \text{subject} \rightarrow \text{predicate} \rightarrow \text{object}
+        \]</p>
       </section>
 
       <section>
         <h2>Linked open data</h2>
         <p>Linked open data is linked data that is also open for reuse.</p>
-        <ul>
-          <li>Open licences</li>
-          <li>Shared identifiers</li>
-          <li>Connections across institutions</li>
-        </ul>
+        <div class="grid3">
+          <div class="box">
+            <h3>Open</h3>
+            <p>Shared licences and access.</p>
+          </div>
+          <div class="box">
+            <h3>Linked</h3>
+            <p>Connected across datasets.</p>
+          </div>
+          <div class="box">
+            <h3>Reusable</h3>
+            <p>Useful for research and integration.</p>
+          </div>
+        </div>
       </section>
 
       <section>
         <h2>Wikidata</h2>
         <p>Wikidata is a collaborative knowledge base of structured data.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Item</span>
+          <span class="arrow">+</span>
+          <span class="node">Property</span>
+          <span class="arrow">+</span>
+          <span class="node">Statement</span>
+          <span class="arrow">+</span>
+          <span class="node">Reference</span>
+        </div>
         <ul>
-          <li>Items</li>
-          <li>Properties</li>
-          <li>Statements</li>
-          <li>References</li>
+          <li>Items identify things.</li>
+          <li>Properties describe relationships and values.</li>
+          <li>Statements connect items with data.</li>
         </ul>
       </section>
 
       <section>
         <h2>Ontology</h2>
         <p>An ontology describes concepts and relationships in a domain.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Museum</span>
+          <span class="arrow">is a type of</span>
+          <span class="node">Institution</span>
+        </div>
         <ul>
           <li>Classes</li>
           <li>Properties</li>
@@ -158,6 +290,13 @@
       <section>
         <h2>Knowledge graph</h2>
         <p>A knowledge graph is a network of entities and relationships.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Entity</span>
+          <span class="arrow">↔</span>
+          <span class="node">Entity</span>
+          <span class="arrow">↔</span>
+          <span class="node">Entity</span>
+        </div>
         <ul>
           <li>Data</li>
           <li>Meaning</li>
@@ -169,6 +308,16 @@
       <section>
         <h2>Semantic Web</h2>
         <p>The Semantic Web aims to make web data understandable by machines.</p>
+        <div class="diagram" style="text-align:center;">
+          <span class="node">Web documents</span>
+          <span class="arrow">→</span>
+          <span class="node">Linked data</span>
+          <span class="arrow">→</span>
+          <span class="node">Machine understanding</span>
+        </div>
+        <p>\[
+          \text{meaning on the web} = \text{data} + \text{links} + \text{shared vocabularies}
+        \]</p>
         <ul>
           <li>RDF</li>
           <li>OWL</li>
@@ -184,6 +333,7 @@
           <li>Metadata describes resources.</li>
           <li>Linked data connects facts on the web.</li>
           <li>Wikidata is a large linked knowledge graph.</li>
+          <li>Ontologies and the Semantic Web provide shared meaning.</li>
         </ul>
       </section>
 
@@ -191,10 +341,21 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
-      slideNumber: true
+      slideNumber: true,
+      mathjax3: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      },
+      plugins: [ RevealMath.MathJax3 ]
     });
   </script>
 </body>
