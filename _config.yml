@@ -1,0 +1,5 @@
+title: Arjun Ghosh
+description: Personal academic website
+remote_theme: alshedivat/al-folio
+plugins:
+  - jekyll-remote-theme
