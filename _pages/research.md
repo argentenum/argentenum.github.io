@@ -9,7 +9,7 @@ children:
     permalink: https://dh.iitd.ac.in/
   - title: divider
   - title: PhD Supervision
-    permalink: /profiles/
+    permalink: /people/
   - title: divider
   - title: projects
     permalink: /projects/
