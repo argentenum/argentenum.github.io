@@ -37,63 +37,43 @@ cv:
         #  - Description 2.
 
 
-   Experience:
-     - company: Indian Institute of Technology Delhi
-       position: Professor
-       location: Department of Humanities and Social Sciences, IIT Delhi
-       start_date: 2021
-       end_date: present
-       summary: Professor at the Department of Humanities and Social Sciences, IIT Delhi.
-       highlights:
-         - Profile: http://hss.iitd.ac.in/faculty/arjun-ghosh
-         - Department: http://hss.iitd.ac.in/
-         - Institution: http://www.iitd.ac.in/
+    Experience:
+      - company: Institute for Advanced Study, Princeton University
+        position: Professor of Theoretical Physics
+        location: Princeton University, NJ
+        start_date: 1933
+        end_date: 1955
+        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+        highlights:
+          - Relativity
+          - Description 2.
 
-     - company: Indian Institute of Technology Delhi
-       position: Associate Professor
-       location: Department of Humanities and Social Sciences, IIT Delhi
-       start_date: 2014
-       end_date: 2021
-       summary: Associate Professor at the Department of Humanities and Social Sciences, IIT Delhi.
-       highlights:
-         - Profile: http://hss.iitd.ac.in/faculty/arjun-ghosh
-         - Department: http://hss.iitd.ac.in/
-         - Institution: http://www.iitd.ac.in/
+      - company: California Institute of Technology
+        position: Visiting Professor
+        location: Pasadena, California, US
+        start_date: 1933
+        end_date: 1933
+        highlights:
+          - Description 1.
+          - Description 2.
 
-     - company: Indian Institute of Technology Delhi
-       position: Assistant Professor
-       location: Department of Humanities and Social Sciences, IIT Delhi
-       start_date: 2011
-       end_date: 2014
-       summary: Assistant Professor at the Department of Humanities and Social Sciences, IIT Delhi.
-       highlights:
-         - Profile: http://hss.iitd.ac.in/faculty/arjun-ghosh
-         - Department: http://hss.iitd.ac.in/
-         - Institution: http://www.iitd.ac.in/
+      - company: Kaiser Wilhelm Institute for Physics
+        position: Director
+        location: Berlin, Germany
+        start_date: 1917
+        end_date: 1933
 
-     - company: Jamia Millia Islamia
-       position: Assistant Professor
-       location: Department of English, New Delhi
-       start_date: 2010
-       end_date: 2011
+      - company: Karl-Ferdinand University
+        position: Professor of Theoretical Physics
+        location: Prague, Czechoslovakia
+        start_date: 1911
+        end_date: 1917
 
-     - company: Indian Institute of Advanced Study
-       position: Fellow
-       location: Shimla
-       start_date: 2009
-       end_date: 2010
-
-     - company: Shivaji College, University of Delhi
-       position: Assistant Professor
-       location: Department of English
-       start_date: 2005
-       end_date: 2009
-
-     - company: University of Delhi
-       position: Ad Hoc / Temporary Lecturer in English
-       location: Various colleges
-       start_date: 2002
-       end_date: 2005
+      - company: University of Zurich
+        position: Associate Professor of Theoretical Physics
+        location: Zurich, Switzerland
+        start_date: 1909
+        end_date: 1911
 
     Volunteer:
       - company: People's Climate March
