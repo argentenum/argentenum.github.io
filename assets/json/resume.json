@@ -1,23 +1,23 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Arjun Ghosh",
+    "label": "Professor",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "arjunghosh@hss.iitd.ac.in",
+    "phone": "",
+    "summary": "Digital humanist",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Indian INstitute of Technology Delhi",
+      "postalCode": "110016",
+      "city": "New Delhi",
+      "countryCode": "IN",
+      "region": "Delhi"
     },
     "profiles": []
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
+      "name": "Indian Institute of Technology Delhi",
       "position": "Professor of Theoretical Physics",
       "location": "Princeton University, NJ",
       "startDate": "1933-01-01",
