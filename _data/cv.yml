@@ -1,10 +1,10 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Arjun Ghosh
+  label: Professor
+  email: arjunghosh@hss.iitd.ac.in
+  location: IIT Delhi Abu Dhabi
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Digital Humanities scholar
 
   social_networks:
     - network: X
@@ -15,11 +15,11 @@ cv:
       username: example
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: Indian Institute of Technology Delhi
+    city: New Delhi
+    region: Delhi
+    postalCode: 110016
+    countryCode: IN
 
   sections:
     Education:
