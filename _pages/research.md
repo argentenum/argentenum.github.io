@@ -5,15 +5,12 @@ nav: true
 nav_order: 3
 dropdown: true
 children:
-  - title: books
-    permalink: /books/
+  - title: IITD DH
+    permalink: https://dh.iitd.ac.in/
   - title: divider
-  - title: articles
-    permalink: /publications/
+  - title: PhD Supervision
+    permalink: /profiles/
   - title: divider
-  - title: talks
-    permalink: /news/
-  - title: divider
-  - title: cv
-    permalink: /cv/
+  - title: projects
+    permalink: /projects/
 ---
