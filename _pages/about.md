@@ -4,6 +4,14 @@ title: about
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
+dropdown: true
+children:
+  - title: bookshelf
+    permalink: /books/
+  - title: divider
+  - title: blog
+    permalink: /blog/
+
 profile:
   align: right
   image: prof_pic.jpg
