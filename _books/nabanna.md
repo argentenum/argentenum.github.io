@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: Nabanna: Of Famine and Resilience: A Play
+title: "Nabanna: Of Famine and Resilience: A Play"
 author: Bijon Bhattacharya, Arjun Ghosh
 cover: assets/img/book_covers/Nabanna.jpg
 olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)
