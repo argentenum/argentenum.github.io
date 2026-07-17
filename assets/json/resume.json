@@ -7,7 +7,7 @@
     "phone": "",
     "summary": "Digital humanist",
     "location": {
-      "address": "Indian INstitute of Technology Delhi",
+      "address": "Indian Institute of Technology Delhi",
       "postalCode": "110016",
       "city": "New Delhi",
       "countryCode": "IN",
@@ -18,12 +18,12 @@
   "work": [
     {
       "name": "Indian Institute of Technology Delhi",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "position": "Professor",
+      "location": "IIT Delhi, New Delhi",
+      "startDate": "2011-02-02",
+      "endDate": "2030-01-01",
+      "summary": "",
+      "highlights": ["Digital Humanities", "Perforamnce Studies"]
     },
     {
       "name": "California Institute of Technology",
