@@ -1,15 +1,15 @@
 ---
 layout: book-review
-title: The Godfather
-author: Mario Puzo
+title: Nabanna: Of Famine and Resilience: A Play
+author: Bijon Bhattacharya (Arjun Ghosh trans.)
 cover: assets/img/book_covers/the_godfather.jpg
 olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 7539967447 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: classics crime historical-fiction mystery novels thriller
 tags: top-100
-buy_link: https://www.amazon.com/Godfather-Deluxe-Mario-Puzo/dp/0593542592
-date: 2024-08-23
-started: 2024-08-23
+buy_link: https://www.amazon.in/Nabanna-Famine-Resilience-Bijon-Bhattacharya/dp/9353040280/ref=sr_1_2?ie=UTF8&qid=1528572850&sr=8-2&keywords=nabanna
+date: 2018-08-20
+started: 2018-08-18
 finished: 2024-09-07
 released: 1969
 stars: 5
