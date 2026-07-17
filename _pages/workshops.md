@@ -3,7 +3,7 @@ layout: page
 title: workshops
 permalink: /workshops/
 nav: true
-order: 4
+order: 8
 ---
 
 Workshop information goes here.
