@@ -3,14 +3,6 @@ layout: about
 title: about
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-nav: true
-dropdown: true
-children:
-  - title: bookshelf
-    permalink: /books/
-  - title: divider
-  - title: blog
-    permalink: /blog/
 
 profile:
   align: right
