@@ -23,28 +23,19 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
+      - institution: Jawaharlal Nehru University
         location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+        url: https://www.jnu.ac.in/
+        area: Performance Studies
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
+        start_date: 2001
+        end_date: 2007
         score: ""
-        courses: "Theory of Relativity"
+        courses: "Idiom for Change: A Study of the Jana Natya Manch”
         highlights:
-          - Description 1.
-          - Description 2.
+        #  - Description 1.
+        #  - Description 2.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
